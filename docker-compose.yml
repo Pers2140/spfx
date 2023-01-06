@@ -1,0 +1,15 @@
+
+version: '3.1'
+
+services:
+  spfx-windows:
+    build: .
+    tty: true
+    volumes:
+      - ./:C:\Users\Public\projects
+    ports:
+      - 81:80
+      - 4321:4321
+      - 35729:35729
+  
+  
